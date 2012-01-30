@@ -1,1 +1,2 @@
-1st commit
+For many secured environments there's a requirement to log every user management action.The idea is to have an Audit logging module,
+ that allow the production service, to have a trace for all administrative tasks done in Fuse ESB(servicemix) or karaf over the following channels : (SSH, WebConsole, JMX)
