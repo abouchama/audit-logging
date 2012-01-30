@@ -1,2 +1,12 @@
-For many secured environments there's a requirement to log every user management action.The idea is to have an Audit logging module,
- that allow the production service, to have a trace for all administrative tasks done in Fuse ESB(servicemix) or karaf over the following channels : (SSH, WebConsole, JMX)
+For many secured environments there's a requirement to log every user management action.
+The idea is to have an Audit logging module, that allow the production service, to have a trace for all administrative tasks done in Fuse ESB(servicemix) or karaf over the following channels : (SSH, WebConsole, JMX)
+
+The trace contain the information of the admin or operator user logged, the task realized, channel used, date...etc
+
+Example of trace:
+
+command = list
+event.topics = org/apache/felix/service/command/EXECUTING
+event.subject = Subject:
+ Principal: UserPrincipal[karaf]
+]
