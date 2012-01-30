@@ -28,7 +28,7 @@
     <service ref="handler" interface="org.osgi.service.event.EventHandler">
         <service-properties>
 			<entry key="event.topics" value="org/apache/*"/>
-		</service-properties>
+	</service-properties>
     </service>
 
 </blueprint>
