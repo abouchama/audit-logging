@@ -6,7 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Sample {@link EventHandler} that just logs the events it receives
+ * Sample {EventHandler} that just logs the events it receives
  */
 public class LoggingEventListener implements EventHandler {
 	
