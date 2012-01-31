@@ -3,10 +3,19 @@ The idea is to have an Audit logging module, that allow the production service, 
 
 The trace contain the information of the admin or operator user logged, the task realized, channel used, date...etc
 
-Example of trace:
+Example of log:
 
-command = list
+17:22:34,119 | INFO | Thread-11 | LoggingEventListener | com.abouchama.LoggingEventListener 25 | Event [
+Topic: org/apache/felix/service/command/EXECUTING
+
+command = osgi:list
 event.topics = org/apache/felix/service/command/EXECUTING
 event.subject = Subject:
  Principal: UserPrincipal[karaf]
 ]
+
+In this example you can see sample entries for actions taken via SSH. Log entries contain info like:
+•	username : karaf
+•	Command performed : osgi:list
+•	Event : org/apache/felix/service/command/EXECUTING
+
